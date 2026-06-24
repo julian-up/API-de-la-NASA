@@ -1,5 +1,5 @@
 
-body {
+/* body {
   background:
     radial-gradient(circle at top, rgba(0, 209, 255, 0.12), transparent 25%),
     radial-gradient(circle at 80% 20%, rgba(0, 255, 200, 0.10), transparent 20%),
@@ -7,7 +7,7 @@ body {
   color: #f4f8fb;
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
-}
+} */
 
 /* Texto secundario */
 .text-light-secondary {
