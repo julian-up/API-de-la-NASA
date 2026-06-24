@@ -1,1 +1,1 @@
-console.log("hola mundo");
+import { obtenerApod } from "./api.js"
