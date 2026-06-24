@@ -24,25 +24,6 @@ body::before {
     z-index: -1;
 }
 
-/* Navbar */
-.navbar {
-    backdrop-filter: blur(10px);
-    background: rgba(17, 24, 39, 0.9) !important;
-}
-
-.navbar-brand {
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-}
-
-.nav-link {
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: #60a5fa !important;
-}
-
 .card {
     background: rgba(17, 24, 39, 0.9);
     color: white;
@@ -69,40 +50,25 @@ body::before {
     border-color: rgba(255, 255, 255, 0.1);
 }
 
-
-.card-img-top {
-    height: 250px;
-    object-fit: cover;
-}
-
 h1, h2 {
     color: #f8fafc;
 }
-
-footer {
-    background: rgba(17, 24, 39, 0.95);
-    backdrop-filter: blur(8px);
+.team-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-footer p,
-footer span {
-    color: #cbd5e1;
+.team-icon i {
+    font-size: 20px;
+    color: #60a5fa;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .card {
-        margin-bottom: 20px;
-    }
-
-    .card-img-top {
-        height: 200px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
+.team-icon i:hover {
+    transform: scale(1.1);
+    color: #93c5fd;
 }
