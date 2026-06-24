@@ -1,0 +1,20 @@
+{
+  "name": "api-de-la-nasa",
+  "version": "1.0.0",
+  "description": "Desarrollo profesional para consumo de API de la NASA,es un programa que publica diariamente una imagen o video astronómico acompañado de una breve explicación científica",
+  "homepage": "https://github.com/julian-up/API-de-la-NASA#readme",
+  "bugs": {
+    "url": "https://github.com/julian-up/API-de-la-NASA/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julian-up/API-de-la-NASA.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
