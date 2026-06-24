@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    font-family: Arial, sans-serif;
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20250401/pngtree-amazing-blue-and-purple-galaxy-background-with-stars-in-the-night-image_17161504.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Overlay oscuro para mejorar lectura */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.518);
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(17, 24, 39, 0.9) !important;
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #60a5fa !important;
+}
+
+.card {
+    background: rgba(17, 24, 39, 0.9);
+    color: white;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    line-height: 1.7;
+    color: #d1d5db;
+}
+
+.list-group-item {
+    background: transparent;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+h1, h2 {
+    color: #f8fafc;
+}
+
+footer {
+    background: rgba(17, 24, 39, 0.95);
+    backdrop-filter: blur(8px);
+}
+
+footer p,
+footer span {
+    color: #cbd5e1;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
