@@ -1,4 +1,4 @@
-const API_KEY = " 1TUKsecP1PIy1quX7VkbxAJuJwPHWXOD8DaJRNeO";
+const API_KEY = "1TUKsecP1PIy1quX7VkbxAJuJwPHWXOD8DaJRNeO";
 const URL_BASE = "https://api.nasa.gov/planetary/apod";
 
 export async function obtenerAPOD(fecha = "") {
@@ -20,4 +20,4 @@ export async function obtenerAPOD(fecha = "") {
   }
 }
 
-console.log(obtenerAPOD);
+// console.log(obtenerAPOD('24/06/2026'));

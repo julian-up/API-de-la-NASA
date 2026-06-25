@@ -1,5 +1,5 @@
 import { obtenerAPOD } from "./api.js";
-
+import { iniciarFavoritos } from "./fav.js";
 import {
     mostrarAPOD,
     mostrarCargando,
@@ -54,4 +54,5 @@ botonBuscar.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     cargarAPOD();
+    iniciarFavoritos(cargarAPOD);
 });

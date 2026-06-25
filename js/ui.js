@@ -13,12 +13,18 @@ export function mostrarAPOD(data) {
   media.innerHTML = "";
 
   if (data.media_type === "video") {
-    const iframe = document.createElement("iframe");
-    iframe.src = data.url; //El enlace que incrusto para el video
-    iframe.width = "100%";
-    iframe.height = "400";
-    iframe.allowFullscreen = true;
-    media.appendChild(iframe);
+    const video = document.createElement("video");
+    video.src = data.url; //El enlace que incrusto para el video
+    video.controls = true;
+    video.height = "400";
+    video.className = "w-100 rounded-4"
+    media.appendChild(video);
+  }else{
+    const img = document.createElement("img");
+      img.src = data.url;
+      img.alt = data.title;
+      img.className =  "img-fluid rounded-4"
+      media.appendChild(img);
   }
 }
 
@@ -31,7 +37,7 @@ export function mostrarCargando(visible) {
   if (loading) loading.style.display = visible ? "block" : "none";
 }
 
-export function mostrarError() {
+export function mostrarError(mensaje) {
   const error = document.getElementById("error");
   if (error) {
     error.textContent = mensaje;

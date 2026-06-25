@@ -47,14 +47,14 @@ function renderFavoritos() {
 
   // Estado vacío.
   if (favoritos.length === 0) {
-    lista.innerHTML = "<li>No hay favoritos guardados.</li>";
+    lista.innerHTML = "<li class='list-group-item favorite-item'>No hay favoritos guardados.</li>";
     return;
   }
-}
+
 
 favoritos.forEach((fav) => {
   const li = document.createElement("li");
-
+  li.className = "list-group-item favorite-item"
   // Parte clicable: al hacer clic recarga ese APOD.
   const info = document.createElement("span");
   info.textContent = `${fav.title} (${fav.date})`;
@@ -67,6 +67,7 @@ favoritos.forEach((fav) => {
   // Botón para borrar este favorito.
   const btnBorrar = document.createElement("button");
   btnBorrar.textContent = "✕";
+  btnBorrar.className = "ms-4 btn btn-danger"
   btnBorrar.addEventListener("click", () => eliminarFavorito(fav.date));
 
   // info y btnBorrar son HERMANOS dentro del li. Como cada uno tiene su
@@ -75,7 +76,7 @@ favoritos.forEach((fav) => {
   li.appendChild(btnBorrar);
   lista.appendChild(li);
 });
-
+}
 export function iniciarFavoritos(funcionCargar) {
   cargarAPOD = funcionCargar; // guardamos la función para usarla luego
 
