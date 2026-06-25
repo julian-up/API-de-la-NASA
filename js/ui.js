@@ -38,7 +38,7 @@ export function mostrarCargando(visible) {
 }
 
 export function mostrarError(mensaje) {
-  const error = document.getElementById("error");
+  const error = document.getElementById("message-box");
   if (error) {
     error.textContent = mensaje;
     error.style.display = mensaje ? "block" : "none";
